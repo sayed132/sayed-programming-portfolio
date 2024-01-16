@@ -10,7 +10,7 @@ const navigation = [
   { name: "Blog", to: "/blog" },
 ];
 
-export default function Navbar() {
+export default function Test() {
   return (
     <Disclosure as="nav" className="bg-gradient-to-r from-[#0C1222] to-[#0B1220]">
       {({ open }) => (

@@ -1,42 +1,28 @@
 import { Link } from "react-router-dom";
-import PrimaryButton from "../../Hooks/PrimaryButton";
-import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className=" bg-gradient-to-r bg-white flex min-h-[700px]  w-full items-center justify-center px-8">
+    <section className=" bg-gradient-to-r text-white flex min-h-[700px]  w-full items-center justify-center px-8">
       <div className="flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
         <div className="max-w-md md:space-y-6 sm:space-y-5 space-y-4">
-          <div className="uppercase h-24 lg:text-3xl sm:text-2xl text-lg font-bold leading-tight text-gray-900">
-            <TypeAnimation
-              // Same String at the start will only be typed once, initially
-              sequence={[
-                `Hi, I'am Abu Sayed.`,
-                1000,
-                `I'm a jr. front-end (MERN) web developer.`,
-                1000,
-                `I have basic knowledge of back-end web development.`,
-                1000,
-                `If You Want me please contact me.`,
-                1000,
-              ]}
-              speed={30} // Custom Speed from 1-99 - Default Speed: 40
-              // style={{ fontSize: "2em", color: "black", fontWeight: "bold"}}
-              wrapper="span" // Animation will be rendered as a <span>
-              repeat={Infinity} // Repeat this Animation Sequence infinitely
-            />
-          </div>
-          <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight text-gray-900">
-            Mern Stack Web Developer.
+          
+          <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight text-gray-400">
+          Hey.  <span className="text-blue-700"> Welcome </span>
           </h2>
-          <p className="lg:text-lg sm:text-base text-sm text-gray-600">
+          <p className="lg:text-5xl lg:pb-2 sm:text-4xl text-3xl font-bold leading-tight text-gray-400">
+          I'am <span className="text-purple-600">Abu Sayed</span>
+          </p>
+          <span className="lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight text-gray-400">
+            Mern Stack Web Developer.
+          </span>
+          <p className="lg:text-lg sm:text-base text-sm text-gray-500">
             Be a good man and be a great programmer.
           </p>
           <div className="flex space-x-4 items-center">
             <Link to={"/portfolio"}>
-              <button className="flex items-center relative w-48 border-2 border-sky-500 text-sky-500 p-3 rounded-lg group">
+              <button className="flex items-center relative w-48 border-2 hover:border-purple-600 duration-300 border-sky-500 text-sky-500 p-3 rounded-lg group">
                 <span className="text-sm">See The Latest Work</span>
-                <span className="absolute w-1/12 right-3 group-hover:w-11/12 box-content duration-300 flex justify-center bg-white rounded-sm">
+                <span className="absolute w-1/12 right-3 group-hover:w-11/12 box-content duration-300 flex justify-center bg-[#0F172A] rounded-sm">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
