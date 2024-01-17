@@ -10,7 +10,7 @@ const Hero = () => {
           Hey.  <span className="text-blue-700"> Welcome </span>
           </h2>
           <p className="lg:text-5xl lg:pb-2 sm:text-4xl text-3xl font-bold leading-tight text-gray-400">
-          I'am <span className="text-purple-600">Abu Sayed</span>
+          {`I'am`} <span className="text-purple-600">Abu Sayed</span>
           </p>
           <span className="lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight text-gray-400">
             Mern Stack Web Developer.

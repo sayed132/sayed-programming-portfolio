@@ -1,0 +1,42 @@
+[
+    {
+        "id": "01",
+        "img":"landing.jpg",
+        "name": "Crate Landing Page"
+    },
+    {
+        "id": "02",
+        "img":"e-commerce.png",
+        "name": "build e-commerce website"
+    },
+    {
+        "id": "03",
+        "img":"web.webp",
+        "name": "Web Development"
+    },
+    {
+        "id": "04",
+        "img":"sports.jpg",
+        "name": "Sports Website"
+    },
+    {
+        "id": "05",
+        "img":"admin.png",
+        "name": "Admin Dashboard"
+    },
+    {
+        "id": "06",
+        "img":"figma.jpg",
+        "name": "Figma to Html"
+    },
+    {
+        "id": "07",
+        "img":"news.jpg",
+        "name": "News Portal Website"
+    },
+    {
+        "id": "08",
+        "img":"support.jpg",
+        "name": "Website Technical support"
+    }
+]
