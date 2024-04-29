@@ -13,6 +13,7 @@
     "@emailjs/browser": "^3.12.1",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "firebase": "^10.7.2",
     "framer-motion": "^10.18.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

@@ -4,6 +4,7 @@ import projectDetails from "../../../Data/portfolio.json";
 
 const PortfolioDetail = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
+  const [users, setUsers]= useState([]);
 
   const { id } = useParams();
   const item = projectDetails.find((item) => item.id === parseInt(id));
@@ -22,6 +23,13 @@ const PortfolioDetail = () => {
   if (!item) {
     return <div>Loading...</div>;
   }
+
+  useEffect(()=>{
+    fetch('http://localhost:5000/users')
+    .then(res => res.json())
+    .then(data => setUsers(data))
+  },[])
+ 
   return (
     <div className=" px-8 shadow-lg bg-[#0B1120] m-5">
       <div className="grid grid-cols-7 gap-5 lg:mx-8 p-5 items-center">
@@ -29,6 +37,7 @@ const PortfolioDetail = () => {
           <div className="mb-3">
             <h2 className="font-bold text-xl">Project Name</h2>
             <h3 className="font-bold text-xl text-blue-600">{item?.title}</h3>
+            <h2>numbers of users {users.length}</h2>
           </div>
           <div >
             <h2 className="font-bold text-lg">Description</h2>
